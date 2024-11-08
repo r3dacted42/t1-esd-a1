@@ -6,22 +6,25 @@
     }
     .content {
         position: absolute;
-        top: 0px; bottom: 0px; left: 0px; right: 0px;
-        background: rgb(0,0,0);
-        background: radial-gradient(circle, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 100%);
+        padding: 5%;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgb(35,31,31);
+        background: radial-gradient(circle, #231F1F 0%, #231f1f33 100%);
+        border: 0px solid black;
+        border-radius: 50%;
+        width: max-content;
+        aspect-ratio: 1;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        color: #D7BA88;
     }
 }
 
 .popular-menu {
-    display: flex;
-    flex-flow: row wrap;
     .card {
-        width: 30vw;
-        min-width: 18rem;
         img {
             max-height: 300px;
             object-fit: cover;
